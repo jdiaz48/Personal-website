@@ -15,15 +15,16 @@
 </head>
 
 <style>
-#section1 {background-image: url("bing4.png"); font-weight: 450; font-size: 20px; background-size: cover; padding-top:50px; width: 97%;  border:2px solid #cecece;}
-#section2 {background-image: url("code2.png"); font-weight: 450; font-size: 20px; padding-top:50px; width: 97%; height:400px; border:2px solid #cecece;}
-#section3 {padding-top:50px; width: 97%; height:600px; border:2px solid #cecece;}
-body{background-color: white; color:black;}
-h1{color: #8f72cf;}
+  #section1 {background-image: url("bing4.png"); font-weight: 450; font-size: 20px; background-size: cover; padding-top:50px;}
+  #section2 {background-image: url("code2.png"); font-weight: 450; font-size: 20px; padding-top:50px; padding-bottom: 30px;}
+  #section3 {padding-top:30px; background-color: #a1a3a6;}
+  #section4 {padding-top:30px; background-color: white}
+  body{background-color: white; color:black;}
+  h1{color: #8f72cf;}
 </style>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-<nav class="navbar fixed-top navbar-expand-lg navbar-expand-md navbar-light bg-light">
+<nav class="navbar fixed-top navbar-expand-lg navbar-expand-md navbar-dark bg-dark">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -41,6 +42,7 @@ h1{color: #8f72cf;}
           <a class="dropdown-item" href="#section1">Education</a>
           <a class="dropdown-item" href="#section2">Skills</a>
           <a class="dropdown-item" href="#section3">Harry Potter VR</a>
+          <a class="dropdown-item" href="#section4"> <img src="chrome.png" style='width:18px; height:20px;'/> Chrome Extension</a>
         </div>
       </li>
       <li class="nav-item">
@@ -92,22 +94,38 @@ h1{color: #8f72cf;}
   </div>
   </div>
   <div id="section2" class="container-fluid" >
+    <center>
+    <h1 class="wow slideInDown"> Programming Languages </h1>
+      C/C++/C# </br>
+      Java </br>
+      Python </br>
+      HTML </br>
+      CSS </br>
 
-    <h1> Programming Languages </h1>
-    <ul>
-      <li> C/C++/C# </li>
-      <li> Java </li>
-      <li> Python </li>
-      <li> HTML </li>
-      <li> CSS </li>
-    </ul>
-    <img src="programming.png" align="right" class="wow fadeInRight d-none d-sm-none d-md-block" data-wow-delay=".1s" style='position:relative; height:200px; width:250px; bottom:150px'/>
+  </center>
   </div>
 
   <div id="section3" class="container-fluid">
-      <center><h1> Virtual Reality Project </h1></center>
-      <center><iframe class="wow pulse video"  src="https://drive.google.com/file/d/0B_WeQ--KbDXvQl83Yk9kTVZUUTQ/preview" width="640" height="450" align="middle" frameborder="0" allowfullscreen></iframe></center>
-      <P> Made in Unity using C#. Uses Oculus Touch and Windows Speech for voice recogntion. </p>
+    <div class="row">
+      <div class="col-12">
+      <center><h1 style='font-weight: 350;'> Virtual Reality Project </h1>
+      <iframe class="wow pulse video"  src="https://drive.google.com/file/d/0B_WeQ--KbDXvQl83Yk9kTVZUUTQ/preview" width="640" height="450" align="middle" frameborder="0" allowfullscreen></iframe>
+      <P>  Developed mini Harry Potter VR experience in which the user can perform 6 spells using voice recognition in C#. </br> Created environment in Unity utilizing the Oculus Rift and Oculus Touch. </p></center>
+      </div>
+    </div>
+  </div>
+
+  <div id="section4" class="container-fluid">
+    <center> <h1> Binghamton Professor Finder </h1> </center> </br>
+      <div class="row">
+        <div class="col-6">
+          <center><img class="wow flipInX" src="bpf.png" align="center" style='width: 400px; height: 300px; padding-bottom:30px; '/></center>
+        </div>
+        <div class="col-6">
+          <p> Developed a Chrome Extension that integrates RateMyProfessors.com with Binghamton's Look Up Classes page to optimize the student class registration experience using HTML and JavaScript. </br> Published to the Chrome Web Store with over 50 users. </p>
+          <center><img class="wow flipInX" src="chrome.png" align="center" style='width: 160px; height: 180px; padding-bottom:30px; '/></center>
+        </div>
+      </div>
   </div>
 
   <!-- Optional JavaScript -->
