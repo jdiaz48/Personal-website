@@ -17,10 +17,12 @@
 <style>
   #section1 {background-image: url("bing4.png"); font-weight: 450; font-size: 20px; background-size: cover; padding-top:50px;}
   #section2 {background-image: url("code2.png"); font-weight: 450; font-size: 20px; padding-top:50px; padding-bottom: 30px;}
-  #section3 {padding-top:30px; background-color: #a1a3a6;}
+  #section3 {padding-top:30px; background-color: #bec3cc;}
   #section4 {padding-top:30px; background-color: white}
+  #section5 {padding-top:30px; background-color: #bec3cc;}
   body{background-color: white; color:black;}
   h1{color: #8f72cf;}
+  div.relative {position: relative; top: 200px; padding-left: 100px; padding-right: 100px;}
 </style>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -39,10 +41,9 @@
           Projects
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#section1">Education</a>
-          <a class="dropdown-item" href="#section2">Skills</a>
           <a class="dropdown-item" href="#section3">Harry Potter VR</a>
           <a class="dropdown-item" href="#section4"> <img src="chrome.png" style='width:18px; height:20px;'/> Chrome Extension</a>
+          <a class="dropdown-item" href="#section5">Guitar Chord Website</a>
         </div>
       </li>
       <li class="nav-item">
@@ -108,7 +109,7 @@
   <div id="section3" class="container-fluid">
     <div class="row">
       <div class="col-12 h-100">
-      <center><h1 style='font-weight: 350;'> Virtual Reality Project </h1>
+      <center><h1 style='font-weight: 350; color:white;'> Virtual Reality Project </h1>
       <iframe class="wow pulse video"  src="https://drive.google.com/file/d/0B_WeQ--KbDXvQl83Yk9kTVZUUTQ/preview" width="40%" height="350" frameborder="0" allowfullscreen></iframe>
       <P>  Developed mini Harry Potter VR experience in which the user can perform 6 spells using voice recognition in C#. </br> Created environment in Unity utilizing the Oculus Rift and Oculus Touch. </p></center>
       </div>
@@ -126,6 +127,18 @@
           <center><img class="wow flipInX" src="chrome.png" align="center" style='width: 160px; height: 180px; padding-bottom:30px; '/></center>
         </div>
       </div>
+  </div>
+
+  <div id="section5" class="container-fluid">
+    <center> <h1 style='color:white;'> Guitar Chord Website </h1></br>
+      <div class="row">
+        <div class="col-6">
+          <div class="relative"> <p> Created a website during HackBU hackathon with Cameron Viezel that helps teach people how to play guitar chords through a simple game using HTML and JavaScript</p> </div>
+        </div>
+        <div class="col-6">
+          <iframe class="wow pulse" src="https://cviezel.github.io/Guitar-Chord-Game/" width="70%" height="550"></iframe></center>
+        </div>
+    </div>
   </div>
 
   <!-- Optional JavaScript -->
