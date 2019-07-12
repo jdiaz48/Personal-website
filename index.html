@@ -22,7 +22,14 @@
   #section5 {padding-top:30px; background-color: #bec3cc;}
   body{background-color: white; color:black;}
   h1{color: #8f72cf;}
-  div.relative {position: relative; top: 200px; padding-left: 100px; padding-right: 100px;}
+  @media screen and (min-width: 48em){
+    div.relative{
+        position: relative;
+        top: 30%;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
 </style>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -108,7 +115,7 @@
 
   <div id="section3" class="container-fluid">
     <div class="row">
-      <div class="col-12 h-100">
+      <div class="col-12">
       <center><h1 style='font-weight: 350; color:white;'> Virtual Reality Project </h1>
       <iframe class="wow pulse video"  src="https://drive.google.com/file/d/0B_WeQ--KbDXvQl83Yk9kTVZUUTQ/preview" width="40%" height="350" frameborder="0" allowfullscreen></iframe>
       <P>  Developed mini Harry Potter VR experience in which the user can perform 6 spells using voice recognition in C#. </br> Created environment in Unity utilizing the Oculus Rift and Oculus Touch. </p></center>
@@ -132,11 +139,12 @@
   <div id="section5" class="container-fluid">
     <center> <h1 style='color:white;'> Guitar Chord Website </h1></br>
       <div class="row">
-        <div class="col-6">
+        <div class="col-sm-12 col-md-6 col-lg-6">
           <div class="relative"> <p> Created a website during HackBU hackathon with Cameron Viezel that helps teach people how to play guitar chords through a simple game using HTML and JavaScript</p> </div>
+          <a class="d-sm-block d-md-none" href="https://cviezel.github.io/Guitar-Chord-Game/"> Link to website</a>
         </div>
-        <div class="col-6">
-          <iframe class="wow pulse" src="https://cviezel.github.io/Guitar-Chord-Game/" width="70%" height="550"></iframe></center>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <iframe class="wow pulse d-none d-sm-none d-md-block" src="https://cviezel.github.io/Guitar-Chord-Game/" width="70%" height="550"></iframe></center>
         </div>
     </div>
   </div>
